@@ -22,4 +22,5 @@ story = instacrwaler.get_latest_story(username='')
 
 ## Caution
 - It use the mirror site named [imgsed](https://imgsed.com/). So if the site changes, it may not work.
+- Due to the nature of the mirror site, it is hard to identify fixed feeds.
 - When a new feed/story is posted, it needs time to be reflected. (about ???)
