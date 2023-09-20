@@ -11,13 +11,13 @@ If you want to see the detail, please check [Caution](#caution).
 pip install instacrawler
 ```
 
-## Quickstart
+## Quick start
 ```py
 import instacrwaler
 
-feed = instacrwaler.get_latest_feed(username='')
+feed = instacrwaler.get_latest_feed(username='starbuckskorea')
 
-story = instacrwaler.get_latest_story(username='')
+story = instacrwaler.get_latest_story(username='starbuckskorea')
 ```
 
 ## Caution
