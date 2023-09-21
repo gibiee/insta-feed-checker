@@ -23,10 +23,10 @@ pip install instacrawler
 import instacrawler
 
 instacrawler.get_latest_feed(username='starbucks')
-# OUTPUT : (text, PIL.image)
+# OUTPUT : (text, PIL.Image)
 
 instacrawler.get_latest_story(username='starbucks')
-# OUTPUT : PIL.image
+# OUTPUT : PIL.Image
 ```
 
 ## Caution
