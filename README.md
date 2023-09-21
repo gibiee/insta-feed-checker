@@ -4,13 +4,13 @@
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/instacrawler?color=blue)
 
 # instacrawler
-**instacrawler** is the fastest way to check someone's instagram feed/story.
+**instacrawler** is the fastest and simplest way to check someone's instagram feed/story.
 - No instagram account required.
 - Available on VM
 
 You can find more detailed information in [Caution](#caution).
 
-**<ins>If it helped you, please give me a star⭐️. Thank you!</ins>**
+**<ins>If it helped you, please give me a star ⭐️. Thank you!</ins>**
 
 
 ## Installation
@@ -32,6 +32,6 @@ instacrawler.get_latest_story(username='starbucks')
 ```
 
 ## Caution
-- It use the mirror site named [imgsed](https://imgsed.com/). So if the site changes, it may not work.
+- This library use the mirror site named [imgsed](https://imgsed.com/). So if the site changes, this may not be worked.
 - Due to the nature of the mirror site, it is hard to identify fixed feeds.
 - When a new feed/story is posted, it needs time to be reflected. (about ???)
