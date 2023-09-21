@@ -1,5 +1,7 @@
-![PyPI - Downloads](https://img.shields.io/pypi/dm/instacrawler)
-![PyPI - License](https://img.shields.io/pypi/l/instacrawler?color=blue)
+![PyPI - Version](https://img.shields.io/pypi/v/instacrawler?color=red)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/instacrawler?color=orange)
+![PyPI - License](https://img.shields.io/pypi/l/instacrawler?color=green)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/instacrawler?color=blue)
 
 # instacrawler
 **instacrawler** is the fastest way to check someone's instagram feed/story.
