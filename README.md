@@ -1,23 +1,28 @@
-# Not yet available. (developing now)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/instacrawler)
+![PyPI - License](https://img.shields.io/pypi/l/instacrawler?color=blue)
 
 **instacrawler** is the fastest way to check someone's instagram feed/story.
 - No instagram account required.
 - Available on VM
 
+If it helped you, please give a github star⭐️. Thank you!
 If you want to see the detail, please check [Caution](#caution).
 
 ## Installation
 ```bash
+# Python > 3.6
 pip install instacrawler
 ```
 
 ## Quick start
 ```py
-import instacrwaler
+import instacrawler
 
-feed = instacrwaler.get_latest_feed(username='starbuckskorea')
+latest_feed = instacrawler.get_latest_feed(username='starbuckskorea')
+# OUTPUT : (text, PIL.image)
 
-story = instacrwaler.get_latest_story(username='starbuckskorea')
+latest_story = instacrawler.get_latest_story(username='starbuckskorea')
+# OUTPUT : PIL.image
 ```
 
 ## Caution
