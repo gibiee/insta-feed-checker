@@ -25,7 +25,7 @@ import instacrawler
 instacrawler.get_latest_feed(username='starbucks')
 # OUTPUT : (text, PIL.image)
 
-instacrawler.get_latest_story(username='starbuckskorea')
+instacrawler.get_latest_story(username='starbucks')
 # OUTPUT : PIL.image
 ```
 
