@@ -6,6 +6,7 @@ from PIL import Image
 
 opts = webdriver.ChromeOptions() 
 opts.add_argument('--headless=new')
+opts.add_experimental_option('excludeSwitches', ['enable-logging'])
 
 driver = webdriver.Chrome(options=opts)
 driver.implicitly_wait(30)

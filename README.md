@@ -8,12 +8,13 @@
 
 You can find more detailed information in [Caution](#caution).
 
-**<ins>If it helped you, please give a github star⭐️. Thank you!</ins>**
+**<ins>If it helped you, please give me a star⭐️. Thank you!</ins>**
 
 
 ## Installation
+- Python >= 3.7
 ```bash
-# Python > 3.6
+pip install --upgrade pip
 pip install instacrawler
 ```
 
@@ -21,10 +22,10 @@ pip install instacrawler
 ```py
 import instacrawler
 
-latest_feed = instacrawler.get_latest_feed(username='starbuckskorea')
+instacrawler.get_latest_feed(username='starbucks')
 # OUTPUT : (text, PIL.image)
 
-latest_story = instacrawler.get_latest_story(username='starbuckskorea')
+instacrawler.get_latest_story(username='starbuckskorea')
 # OUTPUT : PIL.image
 ```
 
