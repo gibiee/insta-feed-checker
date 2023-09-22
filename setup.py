@@ -4,7 +4,7 @@ setup(
     name = 'instacrawler',
     version = '1.0.3',
     description = "The fastest way to check someone's instagram feed/story.",
-    long_description = open('README.md').read(),
+    long_description = open('README.md', encoding='utf-8').read(),
     long_description_content_type = 'text/markdown',
     author = 'gibiee',
     author_email = 'gibiee@naver.com',
