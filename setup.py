@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name = 'instacrawler',
-    version = '1.0.3',
+    version = '1.0.4',
     description = "The fastest way to check someone's instagram feed/story.",
     long_description = open('README.md', encoding='utf-8').read(),
     long_description_content_type = 'text/markdown',
@@ -13,7 +13,10 @@ setup(
     packages = find_packages(exclude=[]),
     include_package_data = True,
     zip_safe = False,
-    install_requires = ['pillow', 'beautifulsoup4', 'selenium', 'requests'],
+    install_requires = ['selenium>=4.10',
+                        'beautifulsoup4',
+                        'requests',
+                        'pillow'],
     
     python_requires ='>=3.7',
     license = 'MIT',

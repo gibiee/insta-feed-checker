@@ -10,7 +10,7 @@
 
 You can find more detailed information in [Caution](#caution).
 
-**<ins>If it helped you, please give me a star ⭐️. Thank you!</ins>**
+**<ins>If it helped you, please give me a star⭐️. Thank you!</ins>**
 
 
 ## Installation
