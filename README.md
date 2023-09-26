@@ -35,5 +35,5 @@ instacrawler.get_latest_story(username='starbucks')
 - This library use the mirror site named [imgsed](https://imgsed.com/). So if the site changes, this may not be worked.
 - Due to the nature of the mirror site, it is hard to identify fixed feeds.
 - When a new feed/story is posted, it needs time to be reflected.
-  - New feed : about 3~4 hours
-  - New Story : about 2~3 hours
+  - New feed : *maybe* up to 4 hours
+  - New Story : *maybe* up to 3 hours

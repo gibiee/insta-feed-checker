@@ -21,7 +21,7 @@ def get_latest_feed(username, k=1) :
     soup = BeautifulSoup(html, 'html.parser')
     
     feeds = soup.find_all('img', loading="lazy")
-    if feeds == None : return None
+    if len(feeds) == 0 : return None
     
     outputs = []
     for feed in feeds[:k] :
@@ -48,7 +48,7 @@ def get_latest_story(username, k=1) :
     if len(wraps) == 0 : return None
     
     outputs = []
-    for wrap in list(reversed(wraps))[:k] :
+    for wrap in reversed(wraps[-k:]) :
         src = wrap.find_element(By.TAG_NAME, 'img').get_attribute('src').split('?', maxsplit=1)[-1]
         img = Image.open(requests.get(src, stream=True).raw).convert('RGB')
         outputs.append(img)
