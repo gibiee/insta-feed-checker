@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from PIL import Image
+from typing import Union
 
 opts = webdriver.ChromeOptions() 
 opts.add_argument('--headless=new')
@@ -11,7 +12,17 @@ opts.add_experimental_option('excludeSwitches', ['enable-logging'])
 driver = webdriver.Chrome(options=opts)
 driver.implicitly_wait(30)
 
-def get_latest_feed(username, k=1) :
+def get_latest_feed(username: str, k: int=1) -> Union[None, tuple, list] :
+    """Check someone's instagram feed.
+
+    Args:
+        username (str): The name of instagram user you want to check.
+        k (int, optional): The number of feeds to check. Defaults to 1.
+
+    Returns:
+        Union[None, tuple, list]: It depends on the k value and the number of checked feeds.
+                                  It will be returned as one of "None, (str, PIL.Image), [(str, PIL.Image)]".
+    """
     assert username != None, "Enter username as a parameter."
     assert k >= 1, "k must be greater than 1."
  
@@ -33,7 +44,17 @@ def get_latest_feed(username, k=1) :
     if len(outputs) == 1 : return outputs[0]
     return outputs
 
-def get_latest_story(username, k=1) :
+def get_latest_story(username: str, k: int=1) -> Union[None, Image.Image, list] :
+    """Check someone's instagram story.
+
+    Args:
+        username (str): The name of instagram user you want to check.
+        k (int, optional): The number of stories to check. Defaults to 1.
+
+    Returns:
+        Union[None, PIL.Image, list]: It depends on the k value and the number of checked stories.
+                                      It will be returned as one of "None, PIL.Image, [PIL.Image]".
+    """
     assert username != None, "Enter username as a parameter."
     assert k >= 1, "k must be greater than 1."
     
@@ -62,3 +83,6 @@ if __name__ == "__main__" :
     
     get_latest_story(username='hipkr_')
     get_latest_story(username='hipkr_', k=3)
+    
+    help(get_latest_feed)
+    help(get_latest_story)
