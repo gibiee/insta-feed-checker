@@ -25,7 +25,7 @@ def get_latest_feed(username: str, k: int=1) -> Union[None, tuple, list] :
     """
     assert username != None, "Enter username as a parameter."
     assert k >= 1, "k must be greater than 1."
- 
+    
     url = f"https://imgsed.com/{username}"
     resp = requests.get(url)
     html = resp.text
@@ -60,6 +60,7 @@ def get_latest_story(username: str, k: int=1) -> Union[None, Image.Image, list] 
     
     url = f"https://imgsed.com/stories/{username}"
     driver.get(url)
+    # driver.page_source
     
     highlight_selected = driver.find_element(By.CSS_SELECTOR, 'li.swiper-slide-active')
     highlight_selected_name = highlight_selected.find_element(By.TAG_NAME, 'div').text
@@ -78,7 +79,9 @@ def get_latest_story(username: str, k: int=1) -> Union[None, Image.Image, list] 
     return outputs
 
 if __name__ == "__main__" :
-    get_latest_feed(username='starbucks')    
+    username='starbucks'
+    
+    get_latest_feed(username='starbucks')
     get_latest_feed(username='starbucks', k=3)
     
     get_latest_story(username='hipkr_')
