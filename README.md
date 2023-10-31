@@ -1,11 +1,11 @@
+# Now, it doesn't seem to work because the mirror site has changed.  I'm trying by other methods.
+
+-------------
+
 ![PyPI - Version](https://img.shields.io/pypi/v/instacrawler?color=red)
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/instacrawler?color=orange)
 ![PyPI - License](https://img.shields.io/pypi/l/instacrawler?color=green)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/instacrawler?color=blue)
-
-# Now, it doesn't seem to work because the mirror site has changed.
-
-
 
 # instacrawler
 **instacrawler** is the fastest and simplest way to check someone's instagram feed/story.
