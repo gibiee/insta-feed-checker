@@ -1,13 +1,13 @@
 import requests
 
 def get_feeds(username: str) -> list :
-    """Check the username's Instagram latest feeds up to 12.
+    """Check the username's latest Instagram feeds up to 12.
 
     Args:
         username (str): The name of instagram user you want to check.
 
     Returns:
-        list : It will be returned as list containing tuples".
+        list : It will be returned as list containing tuples.
     """
     assert username != None, "Enter username as a parameter."
     
