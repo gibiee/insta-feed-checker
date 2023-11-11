@@ -1,43 +1,34 @@
-# Now, it doesn't seem to work because the mirror site has changed.  I'm trying by other methods.
+![PyPI - Version](https://img.shields.io/pypi/v/insta-feed-checker?color=red)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/insta-feed-checker?color=orange)
+![PyPI - License](https://img.shields.io/pypi/l/insta-feed-checker?color=green)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/insta-feed-checker?color=blue)
 
--------------
-
-![PyPI - Version](https://img.shields.io/pypi/v/instacrawler?color=red)
-![PyPI - Downloads](https://img.shields.io/pypi/dm/instacrawler?color=orange)
-![PyPI - License](https://img.shields.io/pypi/l/instacrawler?color=green)
-![PyPI - Python Version](https://img.shields.io/pypi/pyversions/instacrawler?color=blue)
-
-# instacrawler
-**instacrawler** is the fastest and simplest way to check someone's instagram feed/story.
-- No instagram account required.
-- Available on VM
-
-You can find more detailed information in [Caution](#caution).
+# Instagram Feed Checker
+This is the fastest and simplest way to check someone's instagram feeds.
+- Free.
+- Not required your instagram account.
+- Instagram defends the use of web scraping tools in VM. But, this library can be used in VM.
 
 **<ins>If it helped you, please give me a star⭐️. Thank you!</ins>**
 
-
-## Installation
-- Python >= 3.7
+## Quick start
+- Python >= 3.6
 ```bash
 pip install --upgrade pip
-pip install instacrawler
+pip install insta_feed_checker
 ```
 
-## Quick start
 ```py
-import instacrawler
+import insta_feed_checker
 
-instacrawler.get_latest_feed(username='starbucks')
-# OUTPUT : (text, PIL.Image)
-
-instacrawler.get_latest_story(username='starbucks')
-# OUTPUT : PIL.Image
+insta_feed_checker.get_feeds(username='starbucks')
+# It will be returned pairs of url(image src) and caption as [(text, text), (text, text), ...]
 ```
 
 ## Caution
-- This library use the mirror site named [imgsed](https://imgsed.com/). So if the site changes, this may not be worked.
-- Due to the nature of the mirror site, it is hard to identify fixed feeds.
-- When a new feed/story is posted, it needs time to be reflected.
-  - New feed : *maybe* up to 4 hours
-  - New Story : *maybe* up to 3 hours
+**This library is free, so it has some constraints.**
+- You can only get up to 12 Instagram latest feeds.
+- If you repeat the call in a short time, you may get ***blocked***.
+  - `JSONDecodeError: Expecting value: line 1 column 1 (char 0)` means you are blocked.
+  - If you are blocked, it will be released after some time.
+  - When I tested it, even if I request once every 10 minutes, I was blocked around the 40th time.
