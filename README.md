@@ -9,7 +9,7 @@ This is the fastest and simplest way to check someone's instagram feeds.
 - Not required your instagram account.
 - Instagram prohibits the use of web scraping tools in VM(virtual machine). But, this library can be used in VM.
 
-**<ins>If it helped you, please give me a star⭐️. Thank you!</ins>**
+**<ins>If it is helpful, please give me a star⭐️. Thank you!</ins>**
 
 ## Quick start
 - Python >= 3.6
@@ -22,7 +22,7 @@ pip install insta_feed_checker
 import insta_feed_checker
 
 insta_feed_checker.get_feeds(username='starbucks')
-# Pairs of url(image src) and caption will be returned in a format like [(text, text), (text, text), ...]
+# Pairs of url(image src) and caption will be returned in a format like [(str, str), (str, str), ...]
 ```
 
 ## Caution
