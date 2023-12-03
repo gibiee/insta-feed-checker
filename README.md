@@ -4,7 +4,7 @@
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/insta-feed-checker?color=blue)
 
 # Instagram Feed Checker
-This is the fastest and simplest way to check someone's instagram feeds.
+This library is the fastest and simplest way to check someone's Instagram feed.
 - Free.
 - Not required your instagram account.
 - Instagram prohibits the use of web scraping tools in VM(virtual machine). But, this library can be used in VM.
